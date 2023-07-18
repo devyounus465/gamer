@@ -147,6 +147,15 @@ span.nav-follow {
 }
 
 /* gamer area style */
+
+section.gamer-area-start {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 66, 165, 0.03) 0%,
+    rgba(255, 66, 165, 0.03) 100%
+  );
+  padding: 7.5rem 0;
+}
 .gamer-left-content {
   width: 60%;
 }
@@ -163,6 +172,133 @@ h3.gamer-qoute {
 span.purpose {
   font-size: 1.8rem;
   font-weight: 400;
+}
+
+/* online games style*/
+section.online-games-area-start {
+  padding: 7.5rem 0;
+}
+.online-games-title {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+/* online  video area style */
+.online-games-videos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  gap: 1rem;
+}
+/* .video-box {
+  width: 30rem;
+} */
+.video-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid #fff;
+
+  height: 40rem;
+  border-radius: 1.6rem;
+}
+.box-one {
+  background-image: url("../images/Rectangle\ 4.png");
+  /* background-position: center center; */
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: all 0.3s ease-in-out;
+}
+
+.box-one:hover {
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.6) 0%,
+      rgba(0, 0, 0, 0.6) 100%
+    ),
+    url(../images/Rectangle\ 4.png), lightgray 50% / cover no-repeat;
+  border: 3px solid var(--primary-color);
+}
+.box-two {
+  background-image: url("../images/Rectangle\ 5.png");
+  /* background-position: center center; */
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: all 0.3s ease-in-out;
+}
+
+.box-two:hover {
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.6) 0%,
+      rgba(0, 0, 0, 0.6) 100%
+    ),
+    url(../images/Rectangle\ 5.png), lightgray 50% / cover no-repeat;
+  border: 3px solid var(--primary-color);
+}
+.box-three {
+  background-image: url("../images/Rectangle\ 6.png");
+  /* background-position: center center; */
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: all 0.3s ease-in-out;
+}
+
+.box-three:hover {
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.6) 0%,
+      rgba(0, 0, 0, 0.6) 100%
+    ),
+    url(../images/Rectangle\ 6.png), lightgray 50% / cover no-repeat;
+  border: 3px solid var(--primary-color);
+}
+.box-four {
+  background-image: url("../images/Rectangle\ 7.png");
+  /* background-position: center center; */
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: all 0.3s ease-in-out;
+}
+
+.box-four:hover {
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.6) 0%,
+      rgba(0, 0, 0, 0.6) 100%
+    ),
+    url(../images/Rectangle\ 7.png), lightgray 50% / cover no-repeat;
+  border: 3px solid var(--primary-color);
+}
+
+.video-content:hover .video-button-content {
+  display: block;
+}
+.video-button-content {
+  display: none;
+}
+
+.play-btn {
+  display: grid;
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+}
+.play-btn i {
+  font-size: 4.8rem;
+  margin-bottom: 1.5rem;
+}
+span.video-play {
+  background: var(--linear, linear-gradient(90deg, #ff42a5 0%, #ff42a5 100%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 2rem;
+  font-weight: 600;
+}
+.caption {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #534c64;
 }
 /* responsive */
 
@@ -184,12 +320,20 @@ span.purpose {
   }
 
   /* gamer */
+
   .gamer-right-content {
     width: 100%;
     text-align: center;
   }
   .gamer-left-content {
     width: 100%;
+  }
+
+  /* online game */
+
+  .online-games-videos {
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
   }
 }
 
@@ -218,5 +362,12 @@ span.purpose {
   .hero-right-content {
     width: 100%;
     order: 1;
+  }
+
+  /* online game */
+
+  .online-games-videos {
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
   }
 }
