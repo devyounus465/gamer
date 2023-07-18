@@ -31,6 +31,11 @@ h2 {
   font-weight: 600;
   color: #0b0223;
 }
+h3 {
+  font-size: 2.4rem;
+  font-weight: 600;
+  color: #0b0223;
+}
 img {
   width: 100%;
 }
@@ -141,6 +146,24 @@ span.nav-follow {
   margin-right: 1rem;
 }
 
+/* gamer area style */
+.gamer-left-content {
+  width: 60%;
+}
+.gamer-right-content {
+  width: 40%;
+  text-align: right;
+}
+.gamer-right-content p {
+  margin: 2rem 0;
+}
+h3.gamer-qoute {
+  margin-top: 2rem;
+}
+span.purpose {
+  font-size: 1.8rem;
+  font-weight: 400;
+}
 /* responsive */
 
 /* responsive for tablet */
@@ -158,6 +181,15 @@ span.nav-follow {
   .hero-right-content {
     width: 100%;
     order: 1;
+  }
+
+  /* gamer */
+  .gamer-right-content {
+    width: 100%;
+    text-align: center;
+  }
+  .gamer-left-content {
+    width: 100%;
   }
 }
 
