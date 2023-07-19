@@ -149,6 +149,7 @@ span.nav-follow {
 }
 .hero-list ul li i {
   margin-right: 1rem;
+  color: var(--primary-color);
 }
 
 /* gamer area style */
